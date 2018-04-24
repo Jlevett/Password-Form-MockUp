@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Password Validator</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+	<script src="js/app.js"></script>
+		<form>
+			<h1>Password Validator</h1>
+			<label for='firstpassword'>
+				<h2>Enter Password</h2>
+				<input type="password" id='firstpassword'  placeholder='Type password' autofocus required>
+			<label>
+			<div class='list-container'>
+				<ul class='conditions'>
+					<li id='length'>16 characters long</li>
+					<li id='symbol1'>At least one of these symbols: !, @, #, $, %</li>
+					<li id='number1'>At least one number</li>
+					<li id='lowercase1'>At least one lowercase</li>
+					<li id='uppercase1'>At least one uppercase</li>
+				</ul>
+			</div>
+			<label for='secondpassword'>
+				<h2>Confirm Password</h2>
+				<input type="password" id='secondpassword' placeholder='Repeat password' required>
+			<label>
+		</form>
+		<div class='button-container'>
+			<button type="submit" id="submit">Submit</button>
+		</div>
+		<label for="checkBox">
+			<input id="checkBox" type="checkbox">Show Passwords?
+		</label>
+	</body>
+</html>
